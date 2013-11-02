@@ -86,6 +86,10 @@ Thoughts so far: doubt that performing flow analysis on assembly code is a good 
 suffixes of some VOP followed by a sequence of VOPs? That way we can exploit TN-level dataflow information that is correct
 at a VOP granularity.
 
+Also fixes
+* <=/>= direct VOPs to avoid double comisd
+* multiple-value cmov
+
 Choose between flagful and branchful :predicate VOPs more smartly
 ======
 
@@ -96,7 +100,7 @@ IR2opt
 ======
 
 jump-jump tensioning could use some love. IR1 block ordering doesn't always suffice, esp. with our funky insertion of
-branches during IR2.
+branches during IR2. Another reason IR1 block ordering isn't enough: some blocks compile to nothing.
 
 SB-GMP
 ======
@@ -114,6 +118,13 @@ Not too hard SMOP
 * "[Sbcl-devel] Feature request: unload all shared libraries", Teemu Likonen
 * "[Sbcl-devel] Can the source transform for mapfoo make its initial cons dynamic-extent?", by Douglas Katzman
 * "Re: [Sbcl-devel] full-eval bug in handling of LET* (and LAMBDA) bindings", Douglas & Christophe
+* Allocate TLS indices at load-time
+     - subclass global-var for specials
+     - add slot to annotate with either load-time handle (see l-t-v), or index
+     - pass immediate or constant SC to VOPs (bind, read, set).
+* data-vector-set-with-offset: return value ourself
+* disassemble: emit preambule/prologue via :keyword argument
+* no-consing declaration
 
 Jump tables
 =====
@@ -127,12 +138,23 @@ Definitely longer-term patches
 * "[Sbcl-devel] Globaldb screwyness because of purify, and a (huge) fix",
  "[Sbcl-devel] Nice compiler speedup",
  "[Sbcl-devel] Two more enhancements for globaldb" by Douglas Katzman
-
 * "Re: [Sbcl-devel] cold-print / hexstr lossage", by Douglas Katzman
 * "Re: [Sbcl-devel] Different treatment of repeated let* variables - special disagreement", by Douglas Katzman
 * generalised brittleness in sb-concurrency tests (e.g. https://bugs.launchpad.net/sbcl/+bug/1188289)
+* div by mul for signed/unsigned ceiling/floor/truncate
+* real dead code elimination pass
+* IR1 tree matching
+* IR2 tree parsing
+* combination-implementation-style for min/max of floats
+* istm maybe-float-lvar-p should be more specific, like maybe-nan-lvar-p: if a float type
+  has lower and upper bounds, it can't be a nan (or we're doing something seriously wrong).
+* comparison with nan/infty: don't error out, return NIL (except for trapping nan).
+* clang-based C++ FFI
+* refcount at coarse granularity?
+* mark/sweep for older generation
+* Post RFC -> disable interrupts/gc during thread startup
 
 Norec SpecTM
 ========
 
-Sequence lock only protects commit/validate. EDSL for trivial read sequence id. Writes only during commit.
+Sequence lock only protects commit/validate. EDSL for trivial read sequence id. Writes only during commit. 
