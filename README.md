@@ -3,7 +3,7 @@ TODO
 
 Public TODO list. Cross between .finger braindump, all SBCL-related for now.
 
-Priority:
+Priorities:
 
 1. Source-transformed TYPEP
 2. abarch's regalloc
@@ -105,7 +105,9 @@ Add code to check for overflowed allocation, https://bugs.launchpad.net/sbcl/+bu
 
 PPC threading patches
 ======
-Barriers in lock-free caches (e.g. memoised specifier-type)
+* Barriers in lock-free caches (e.g. memoised specifier-type)
+
+* seqlock (frlock) in sb-concurrency get some barrier/read ordering wrong.
 
 Not too hard SMOP
 ======
