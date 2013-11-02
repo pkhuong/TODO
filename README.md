@@ -43,6 +43,12 @@ https://bugs.launchpad.net/sbcl/+bug/1042405
 "Re: [Sbcl-devel] [Didier Verna] multiple string reads/writes of SB-IMPL::BAKQ-COMMA", by Douglas Katzman
 https://bugs.launchpad.net/sbcl/+bug/800010
 "[Sbcl-devel] csv output of generation stats in gengcg.c", by Marco Baringer
+"[Sbcl-devel] Patch for Initial Move of GC code into package SB-GC", by Craig Lanning
+https://bugs.launchpad.net/sbcl/+bug/1177986
+https://bugs.launchpad.net/sbcl/+bug/1183982
+"[Sbcl-devel] This fix works (was Re: Can make (get-universal-time) to hang)", Max Mikhanosha
+"[Sbcl-devel] Building with SB-DYNCOUNT feature", Douglas Katzman
+"Re: [Sbcl-devel] Faster FIND and POSITION in unsafe code", Douglas Katzman
 
 Documentation improvement
 ========
@@ -115,3 +121,4 @@ https://bugs.launchpad.net/sbcl/+bug/1028026
 
 "Re: [Sbcl-devel] cold-print / hexstr lossage", by Douglas Katzman
 "Re: [Sbcl-devel] Different treatment of repeated let* variables - special disagreement", by Douglas Katzman
+generalised brittleness in sb-concurrency tests (e.g. https://bugs.launchpad.net/sbcl/+bug/1188289)
