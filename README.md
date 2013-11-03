@@ -38,23 +38,17 @@ Short patches to review/triage
 * 9e7a18990d8cfe726edca3450f84510f5676a3e1 robust pattern match with TYPEP
 * "[PATCH] *print-length* for call-frame args in sb-debug:print-backt…" by Andreas Franke
 * "[Sbcl-devel] Non-executable stack" by James Y Knight
-* "[Sbcl-devel] Another slight SETF cleanup" by Douglas Katzman
 * https://bugs.launchpad.net/sbcl/+bug/1234919
 * "[Sbcl-devel] Tests don't terminate on NetBSD", by Aleksej Saushev
 * https://bugs.launchpad.net/sbcl/+bug/1042405
 * "Re: [Sbcl-devel] Major difficulties with SB-COVER", by Douglas Katzman
-* "Re: [Sbcl-devel] Quickie: (devar *myvar* (bad-fn)) was never warning, with fix and testcase", by Douglas Katzman
 * "Re: [Sbcl-devel] Bug in CLHS regarding multiple-value-call?", by Douglas Katzman: style warn.
-* "[Sbcl-devel] FASLoader improvement", by Douglas Katzman
-* "Re: [Sbcl-devel] Misleading error message- implication is I called COMPILE-FILE when I didn't", by Douglas Katzman
-* "Re: [Sbcl-devel] [Didier Verna] multiple string reads/writes of SB-IMPL::BAKQ-COMMA", by Douglas Katzman
 * https://bugs.launchpad.net/sbcl/+bug/800010
 * "[Sbcl-devel] csv output of generation stats in gengcg.c", by Marco Baringer
 * "[Sbcl-devel] Patch for Initial Move of GC code into package SB-GC", by Craig Lanning
 * https://bugs.launchpad.net/sbcl/+bug/1177986
 * https://bugs.launchpad.net/sbcl/+bug/1183982
 * "[Sbcl-devel] This fix works (was Re: Can make (get-universal-time) to hang)", Max Mikhanosha
-* "[Sbcl-devel] Building with SB-DYNCOUNT feature", Douglas Katzman
 * "Re: [Sbcl-devel] Faster FIND and POSITION in unsafe code", Douglas Katzman
 
 Documentation improvement
