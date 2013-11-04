@@ -5,17 +5,8 @@ Public TODO list. Cross between .finger braindump, all SBCL-related for now.
 
 Priorities:
 
-1. Source-transformed TYPEP
-2. abarch's regalloc
-3. Short patches, in order
-
-
-Handle source-transformed TYPEP during flow-sensitive constraint
-=======
-
-Status: working branch, "just" have to review and commit.
-
-Prioritised because it causes recent regressions.
+1. abarch's regalloc
+2. Short patches, in order
 
 Code review for abarch's regalloc branch
 =======
