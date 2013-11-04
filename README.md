@@ -111,7 +111,6 @@ Not too hard SMOP
 ======
 * "[Sbcl-devel] Feature request: unload all shared libraries", Teemu Likonen
 * "[Sbcl-devel] Can the source transform for mapfoo make its initial cons dynamic-extent?", by Douglas Katzman
-* "Re: [Sbcl-devel] full-eval bug in handling of LET* (and LAMBDA) bindings", Douglas & Christophe
 * Allocate TLS indices at load-time
      - subclass global-var for specials
      - add slot to annotate with either load-time handle (see l-t-v), or index
@@ -132,7 +131,6 @@ Definitely longer-term patches
 * "[Sbcl-devel] Globaldb screwyness because of purify, and a (huge) fix",
  "[Sbcl-devel] Nice compiler speedup",
  "[Sbcl-devel] Two more enhancements for globaldb" by Douglas Katzman
-* "Re: [Sbcl-devel] cold-print / hexstr lossage", by Douglas Katzman
 * "Re: [Sbcl-devel] Different treatment of repeated let* variables - special disagreement", by Douglas Katzman
 * generalised brittleness in sb-concurrency tests (e.g. https://bugs.launchpad.net/sbcl/+bug/1188289)
 * div by mul for signed/unsigned ceiling/floor/truncate
