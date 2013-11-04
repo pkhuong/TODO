@@ -19,7 +19,6 @@ Short patches to review/triage
 * https://bugs.launchpad.net/sbcl/+bug/455381
 * https://bugs.launchpad.net/sbcl/+bug/674372
 * https://bugs.launchpad.net/sbcl/+bug/1038034, comments #17/#18
-* https://bugs.launchpad.net/sbcl/+bug/1245697
 * https://bugs.launchpad.net/sbcl/+bug/806398
 * https://bugs.launchpad.net/sbcl/+bug/1204869
 * https://bugs.launchpad.net/sbcl/+bug/1205148
