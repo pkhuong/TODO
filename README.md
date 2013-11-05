@@ -140,3 +140,9 @@ Norec SpecTM
 ========
 
 Sequence lock only protects commit/validate. EDSL for trivial read sequence id. Writes only during commit. 
+
+Spinning on a single lock bit w/ proportional backoff seems to be comparable to a single CAS in terms of scaling.
+
+Strangely, (preemptable) ticket lock + proportional backoff is much worse.
+
+Just push something usable, we'll fiddle with the details later. It's already pretty good.
