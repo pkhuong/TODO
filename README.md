@@ -5,13 +5,12 @@ Public TODO list. Cross between .finger braindump, all SBCL-related for now.
 
 Priorities:
 
-1. abarch's regalloc
-2. Short patches, in order
+1. Short patches, in order
 
 Code review for abarch's regalloc branch
 =======
 
-It's blocking her work toward a merge.
+Waiting for abarch's OK on https://github.com/pkhuong/sbcl/tree/regalloc-cleanup-staging-rewrite-history-again
 
 Short patches to review/triage
 =======
