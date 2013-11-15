@@ -5,12 +5,17 @@ Public TODO list. Cross between .finger braindump, all SBCL-related for now.
 
 Priorities:
 
-1. Short patches, in order
+Switch/case: nearly working.
 
 Code review for abarch's regalloc branch
 =======
 
 Waiting for abarch's OK on https://github.com/pkhuong/sbcl/tree/regalloc-cleanup-staging-rewrite-history-again
+
+Jump tables
+=====
+expose this as a function: (defun switch (n &rest thunks) (funcall (elt thunks n))).
+https://github.com/pkhuong/sbcl/tree/switch-case
 
 Short patches to review/triage
 =======
@@ -104,10 +109,6 @@ Not too hard SMOP
 * data-vector-set-with-offset: return value ourself
 * disassemble: emit preambule/prologue via :keyword argument
 * no-consing declaration
-
-Jump tables
-=====
-expose this as a function: (defun switch (n &rest thunks) (funcall (elt thunks n))).
 
 Definitely longer-term patches
 ========
