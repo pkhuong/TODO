@@ -5,6 +5,7 @@ Public TODO list. Cross between .finger braindump, all SBCL-related for now.
 
 Priorities:
 
+0. Hunt perf regressions in regalloc
 1. Straighten jumps to jumps that appear late in the compilation process.
 2. Switch/case: nearly working.
 
