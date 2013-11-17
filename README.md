@@ -4,7 +4,7 @@ TODO
 Public TODO list. Cross between .finger braindump, all SBCL-related for now.
 
 Priorities:
-
+Straighten jumps to jumps that appear late in the compilation process.
 Switch/case: nearly working.
 
 Code review for abarch's regalloc branch
