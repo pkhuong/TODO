@@ -12,12 +12,16 @@ Priorities:
 Code review for abarch's regalloc branch
 =======
 
-Waiting for abarch's OK on https://github.com/pkhuong/sbcl/tree/regalloc-cleanup-staging-rewrite-history-again
+Clean up and commit. We can be smarter later.
 
 Jump tables
 =====
 expose this as a function: (defun switch (n &rest thunks) (funcall (elt thunks n))).
 https://github.com/pkhuong/sbcl/tree/switch-case
+
+Live range splitting
+====================
+
 
 Short patches to review/triage
 =======
